@@ -69,6 +69,8 @@
               class="btn btn-lg btn-warning btn-outline-secondary border-0 ab text-dark text-start">
               <i class="fab fa-github fs-2"></i>
               github</a>
+            <button type="button" class="btn btn-lg btn-warning"
+              onclick="playSound('assets/audio/lofi-beat-chill');">Play</button>
             <!-- Cv -->
             <a href="assets/docs/CV_Marco_Antonio_Contreras_Herrera__Comprimido.pdf"
               class="btn btn-lg btn-warning btn-outline-success border-0 ab text-dark text-start"
@@ -159,8 +161,25 @@
 
   <!-- Script core Bootstrap -->
   <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <audio src="assets/audio/lofi-beat-chill.mp3" controls autoplay hidden>
-  </audio>
+
+  <!-- <audio src="assets/audio/lofi-beat-chill.mp3" controls autoplay hidden>
+  </audio> -->
+  <button onclick="playSound('assets/audio/lofi-beat-chill');">Play</button>
+  <div id="sound"></div>
+
+  <script>
+    /**
+      * Plays a sound using the HTML5 audio tag. Provide mp3 and ogg files for best browser support.
+      * @param {string} filename The name of the file. Omit the ending!
+      */
+    function playSound(filename) {
+      var mp3Source = '<source src="' + filename + '.mp3" type="audio/mpeg">';
+      var oggSource = '<source src="' + filename + '.ogg" type="audio/ogg">';
+      var embedSource = '<embed hidden="true" autostart="true" loop="false" src="' + filename + '.mp3">';
+      document.getElementById("sound").innerHTML = '<audio autoplay="autoplay" controls>' + mp3Source + oggSource + embedSource + '</audio>';
+    }
+  </script>
 </body>
+
 
 </html>
