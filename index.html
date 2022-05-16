@@ -2,22 +2,63 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EniDev911 - Portfolio</title>
-    <!-- Core Bootstrap -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
-        integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EniDev911 - Portfolio</title>
+  <!-- Core Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
-    <!-- Script core Bootstrap -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- ******************** Work sections ****************************** -->
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-6">
+        <!-- =========== Carousel component ==================== -->
+        <div id="workCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <!-- Indicators  -->
+          <ol class="carousel-indicators">
+            <li data-bs-target="#workCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#workCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#workCarousel" data-bs-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active border border-danger">
+              <div class="card h-100">
+                <img src="assets/img/card-1.png" alt="css trabajo" class="img-top border border-warning rounded">
+              </div>
+            </div>
+            <div class="carousel-item h-100">
+              <img src="assets/img/card-2.png" alt="" class="d-block w-100">
+            </div>
+            <!-- ========= Controls carousel ======= -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#workCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#workCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <!-- End carousel -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Script core Bootstrap -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
