@@ -1,0 +1,9 @@
+#hero-section {
+    background-image: url("../img/carrot.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    max-width: 100vw;
+    min-height: 100vh;
+    background-position: center center;
+    border-bottom: 2px solid #fa0;
+}
