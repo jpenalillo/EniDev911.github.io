@@ -30,6 +30,38 @@
         aria-expanded="false" aria-label="Toggle navigation" data-bs-target="#navContent">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- Group buttons -->
+      <div class="btn-group btn-group-lg">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/profile.php?id=100009064421475" target="_blank"
+          class="btn btn-lg btn-warning btn-outline-primary border-0 text-dark hover-light">
+          <i class=" fab fa-facebook fs-2"></i> </a>
+        <!-- Twitter -->
+        <a href="https://twitter.com/MarcoContreraas" target="_blank"
+          class="btn btn-lg btn-warning btn-outline-info border-0 text-dark text-start hover-light">
+          <i class="fab fa-twitter fs-2"></i>
+        </a>
+        <!-- Github -->
+        <a href="https://github.com/enidev911" target="_blank"
+          class="btn btn-lg btn-warning btn-outline-dark border-0 ab text-start">
+          <i class="fab fa-github fs-2"></i>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/marco-contreras-herrera-9b6952213/" target="_blank"
+          class="btn btn-lg btn-warning btn-outline-primary border-0 ab text-start text-dark hover-light">
+          <i class="fab fa-linkedin fs-2"></i>
+        </a>
+        <!-- Play -->
+        <button class="btn btn-warning btn-outline-light border-0 text-start text-dark" onclick="playSound();">
+          <i class="fas fa-play fs-3 text-dark ps-0"></i>
+        </button>
+        <!-- Cv -->
+        <a href="assets/docs/CV_Marco_Antonio_Contreras_Herrera__Comprimido.pdf"
+          class="btn btn-lg btn-warning btn-outline-secondary border-0 ab text-dark text-start hover-light"
+          download="CV-EniDev911.pdf">
+          <i class="fas fa-file-download fs-2"></i>
+        </a>
+      </div>
       <div class="collapse navbar-collapse" id="navContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
           <li class="nav-item">
@@ -49,128 +81,145 @@
 
   <!-- ****************** Hero Section ********************* -->
   <header id="hero-section" class="text-dark">
-    <div class="container-fluid m-0 p-0">
-      <!-- Carousel wrapper -->
-      <div id="carouselVideo" class="carousel slide carousel-fade m-0 p-0" data-bs-ride="carousel">
-        <!-- Indicators -->
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselVideo" data-bs-slide-to="0" class="active" aria-current="true"
-            aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselVideo" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselVideo" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-
-        <!-- Inner -->
-        <div class="carousel-inner">
-          <!-- first item -->
-          <div class="carousel-item active">
-            <video class="d-block w-100" autoplay loop muted>
-              <source src="assets/media/beach.mp4" type="video/mp4" />
-            </video>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>
-                Nulla vitae elit libero, a pharetra augue mollis interdum.
-              </p>
-            </div>
-          </div>
-          <!-- second item -->
-          <div class="carousel-item">
-            <video class="d-block w-100" autoplay loop muted>
-              <source src="assets/media/lake.mp4" type="video/mp4" />
-            </video>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </div>
-          </div>
-
-          <!-- thrid item -->
-          <div class="carousel-item">
-            <video class="d-block w-100" autoplay loop muted>
-              <source src="assets/media/sunset.mp4" type="video/mp4" />
-            </video>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
-            </div>
-          </div>
-          <!-- four item -->
-          <div class="carousel-item">
-            <video class="d-block w-100" autoplay loop muted>
-              <source src="assets/media/romantic.mp4" type="video/mp4" />
-            </video>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Inner -->
-
-        <!-- Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselVideo" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselVideo" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    <!-- Carousel wrapper -->
+    <div id="carouselVideo" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselVideo" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselVideo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselVideo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselVideo" data-bs-slide-to="3" aria-label="Slide 4"></button>
       </div>
-      <!-- Carousel wrapper -->
-    </div>
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <!-- first item -->
+        <div class="carousel-item active">
+          <video class="d-block w-100" autoplay loop muted>
+            <source src="assets/media/01.mp4" type="video/mp4" />
+          </video>
+          <div class="carousel-caption d-none d-md-block position-absolute top-50 start-50 translate-middle fs-3">
+            <p>
+              Nulla vitae elit libero, a pharetra augue mollis interdum.
+            </p>
+          </div>
+        </div>
+        <!-- second item -->
+        <div class="carousel-item">
+          <video class="d-block w-100" autoplay loop muted>
+            <source src="assets/media/02.mp4" type="video/mp4" />
+          </video>
+          <div class="carousel-caption d-none d-md-block position-absolute top-50 start-50 translate-middle fs-3">
+            <p>
+              Descansa tu mente, amplifica tu mente
+            </p>
+          </div>
+        </div>
+        <!-- thrid item -->
+        <div class="carousel-item">
+          <video class="d-block w-100" autoplay loop muted>
+            <source src="assets/media/03.mp4" type="video/mp4" />
+          </video>
+          <div class="carousel-caption d-none d-md-block fs-3">
+            <h3>
+              Observar un atardecer te hace sentir más fuerte.
+            </h3>
+            <p>
+              Un atardecer nos puede traer recuerdos de lo que hemos vivido o hemos superado y con ellos descubrir lo
+              que hemos aprendido con el paso del tiempo.
+            </p>
+          </div>
+        </div>
+        <!-- four item -->
+        <div class="carousel-item">
+          <video class="d-block w-100" autoplay loop muted>
+            <source src="assets/media/04.mp4" type="video/mp4" />
+          </video>
+          <div class="carousel-caption d-none d-md-block position-absolute top-50 start-50 fs-3">
 
+          </div>
+        </div>
+      </div>
+      <!-- Inner -->
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselVideo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselVideo" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel wrapper -->
   </header>
 
-  <span> <i class="fas fa-start"> {{ rating.start }}</i> </span>
-
-  <!-- ******************** Work sections ****************************** -->
-
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-6">
-        <!-- =========== Carousel component ==================== -->
-        <div id="workCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-          <!-- Indicators  -->
-          <ol class="carousel-indicators">
-            <li data-bs-target="#workCarousel" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#workCarousel" data-bs-slide-to="1"></li>
-            <li data-bs-target="#workCarousel" data-bs-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active border border-danger">
-              <div class="card h-100">
-                <img src="assets/img/card-1.png" alt="css trabajo" class="img-top border border-warning rounded">
-              </div>
-            </div>
-            <div class="carousel-item h-100">
-              <img src="assets/img/card-2.png" alt="" class="d-block w-100">
-            </div>
-            <div class="carousel-item h-100">
-              <img src="assets/img/card-3.png" alt="" class="d-block w-100">
-            </div>
-            <!-- ========= Controls carousel ======= -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#workCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" data-bs-target="#workCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+  <!-- about section -->
+  <!-- About -->
+  <section id="about" class="container my-5">
+    <div class="row w-100 mx-auto">
+      <div class="col-12 col-lg-5 mb-1">
+        <div class="rounded bg-body shadow-1 card-h">
+          <div class="w-100 shadow-sm">
+            <img src="assets/img/about/02.jpg" alt="" id="aboutMe" class="w-100 h-100 rounded"
+              style="border: 1px solid #CE3061;">
           </div>
         </div>
-        <!-- End carousel -->
+      </div>
+      <div class="col-12 col-lg-7 coding">
+        <div class="rounded bg-light shadow-1 card-h py-4">
+          <h4 class="fs-3 text-start px-3"><span class="typed"></span></h4>
+        </div>
       </div>
     </div>
-  </div>
+    <div class="row mt-3 text-center mx-auto">
+      <div class="col-12 col-md-6 col-lg-4 my-2">
+        <!-- Cards-1 DevOps -->
+        <div class="card border card-h shadow-sm">
+          <h3 class="my-3 fw-bold">DevOps</h3>
+          <i class="fas fa-terminal fa-3x my-3"></i>
+          <div class="card-body">
+            <p class="card-text my-3">A modo de abordar mi trabajo y para generar mayor valor a las plataformas
+              empresariales. Las
+              herramientas de automatización y prestación de servicios de alta calidad para una respuesta rápida a los
+              clientes.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- card-2 designer -->
+      <div class="col-12 col-md-6 col-lg-4 my-2">
+        <div class="card border card-h shadow-2">
+          <h3 class="my-3 fw-bold">Diseñador</h3>
+          <i class="fas fa-drafting-compass fa-3x my-3"></i>
+          <div class="card-body">
+            <p class="card-text my-3">Después de trabajar como desarrollador <i>backend</i>, sentí la necesidad de
+              aprender más
+              sobre el
+              diseño gráfico y asi dedicarme a ser <i>freelancer</i> ofreciendo a mis clientes un mejor servicio y
+              <strong>dedicarles mi completa atención para conectar con ellos y sus necesidades.</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- card-3 writer comic -->
+      <div class="col-12 col-md-6 col-lg-4 my-2">
+        <div class="card border card-h shadow-sm">
+          <h3 class="my-3 fw-bold">Escritor de Cómics</h3>
+          <i class="fas fa-feather-alt fa-3x my-3"></i>
+          <div class="card-body">
+            <p class="card-text my-3">He escrito cómics desde que tenía 14 años de edad. Empecé a inspirarme en mis
+              sueños y a diseñar
+              personajes con los que me sentía identificado dentro de mi universo de fantasía.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ******************** Work sections ****************************** -->
 
   <!-- music -->
   <div id="sound" class="fixed-bottom text-center"></div>
