@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EniDev911 - Portfolio</title>
   <!-- Core Bootstrap -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
   <!-- My CSS  -->
   <link rel="stylesheet" href="assets/css/main.css">
   <!-- Font Awesome -->
@@ -21,9 +21,9 @@
   <!-- ************************ Navigation ******************************** -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-2 border-warning">
     <div class="container">
-      <div class="w-25 d-inline-block">
-        <a class="navbar-brand w-25" href="#">
-          <img src="assets/img/logo_sin_bg.png" class="img-fluid w-25">
+      <div class="d-inline-block w-25">
+        <a class="navbar-brand m-0 p-0" href="#">
+          <img src="assets/img/logo_sin_bg.png" class="img-fluid" style="height:3.1rem" onclick="showAvatar();">
         </a>
       </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-controls="navContent"
@@ -48,45 +48,88 @@
   <!-- ************* End Navigation ****************** -->
 
   <!-- ****************** Hero Section ********************* -->
-  <header id="hero-section" class="text-dark py-5 mt-5">
-    <div class="container">
-      <div class="m-auto col-12 d-flex justify-content-start">
-        <div class="mt-5">
-          <!-- Group buttons -->
-          <div class="btn-group-vertical">
-            <!-- Facebook -->
-            <a href="https://www.facebook.com/profile.php?id=100009064421475" target="_blank"
-              class="mt-3 btn btn-lg btn-warning btn-outline-primary text-dark border-0 ab">
-              <i class="fab fa-facebook fs-2"></i>
-              facebook</a>
-            <button class="btn btn-warning" onclick="playSound('assets/audio/lofi-beat-chill');">Play</button>
-            <!-- Twitter -->
-            <a href="https://twitter.com/MarcoContreraas" target="_blank"
-              class="btn btn-lg btn-warning btn-outline-info border-0 ab text-dark text-start">
-              <i class="fab fa-twitter fs-2"></i>
-              twitter</a>
-            <!-- Github -->
-            <a href="https://github.com/enidev911" target="_blank"
-              class="btn btn-lg btn-warning btn-outline-secondary border-0 ab text-dark text-start">
-              <i class="fab fa-github fs-2"></i>
-              github</a>
-            <button type="button" class="btn btn-lg btn-warning text-start"
-              onclick="playSound('assets/audio/lofi-beat-chill');">
-              <i class="fas fa-play fs-2"></i>
-              Play</button>
-            <!-- Cv -->
-            <a href="assets/docs/CV_Marco_Antonio_Contreras_Herrera__Comprimido.pdf"
-              class="btn btn-lg btn-warning btn-outline-success border-0 ab text-dark text-start"
-              download="CV-EniDev911.pdf">
-              <i class="fas fa-file-download fs-2"></i>
-              &nbsp;&nbsp;CV</a>
+  <header id="hero-section" class="text-dark">
+    <div class="container-fluid m-0 p-0">
+      <!-- Carousel wrapper -->
+      <div id="carouselVideo" class="carousel slide carousel-fade m-0 p-0" data-bs-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselVideo" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselVideo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselVideo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Inner -->
+        <div class="carousel-inner">
+          <!-- first item -->
+          <div class="carousel-item active">
+            <video class="d-block w-100" autoplay loop muted>
+              <source src="assets/media/beach.mp4" type="video/mp4" />
+            </video>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Nulla vitae elit libero, a pharetra augue mollis interdum.
+              </p>
+            </div>
+          </div>
+          <!-- second item -->
+          <div class="carousel-item">
+            <video class="d-block w-100" autoplay loop muted>
+              <source src="assets/media/lake.mp4" type="video/mp4" />
+            </video>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+
+          <!-- thrid item -->
+          <div class="carousel-item">
+            <video class="d-block w-100" autoplay loop muted>
+              <source src="assets/media/sunset.mp4" type="video/mp4" />
+            </video>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
+            </div>
+          </div>
+          <!-- four item -->
+          <div class="carousel-item">
+            <video class="d-block w-100" autoplay loop muted>
+              <source src="assets/media/romantic.mp4" type="video/mp4" />
+            </video>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
+            </div>
           </div>
         </div>
+        <!-- Inner -->
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselVideo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselVideo" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+      <!-- Carousel wrapper -->
     </div>
+
   </header>
 
-
+  <span> <i class="fas fa-start"> {{ rating.start }}</i> </span>
 
   <!-- ******************** Work sections ****************************** -->
 
@@ -129,29 +172,17 @@
     </div>
   </div>
 
+  <!-- music -->
+  <div id="sound" class="fixed-bottom text-center"></div>
 
 
-  <!-- Script core Bootstrap -->
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- Libs and scripts -->
+  <!-- Core Bootstrap -->
+  <script src="assets/js/lib/bootstrap.bundle.min.js"></script>
+  <!-- Sweet Alert2 -->
+  <script src="assets/js/lib/sweetalert2.min.js"></script>
 
-  <!-- <audio src="assets/audio/lofi-beat-chill.mp3" controls autoplay hidden>
-  </audio> -->
-
-  <div id="sound"></div>
-
-  <script>
-    /**
-      * Plays a sound using the HTML5 audio tag. Provide mp3 and ogg files for best browser support.
-      * @param {string} filename The name of the file. Omit the ending!
-      */
-    function playSound(filename) {
-      var mp3Source = '<source src="' + filename + '.mp3" type="audio/mpeg">';
-      var oggSource = '<source src="' + filename + '.ogg" type="audio/ogg">';
-      var embedSource = '<embed hidden="true" autostart="true" loop="false" src="' + filename + '.mp3">';
-      document.getElementById("sound").innerHTML = '<audio autoplay="autoplay" controls>' + mp3Source + oggSource + embedSource + '</audio>';
-    }
-  </script>
+  <script src="assets/js/functions.js"></script>
 </body>
-
 
 </html>
