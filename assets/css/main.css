@@ -3,11 +3,30 @@
 body {
     padding: 0;
     margin: 0;
+    background: #ADA996;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
+
+/* Nav */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
 
 #hero-section {
     width: 100%;
     height: auto;
+    border-bottom: 2px solid #fa0;
+}
+
+/* About */
+#about {
+    background-color: rgba(145, 52, 52, 0.6);
 }
 
 
@@ -15,4 +34,16 @@ body {
 
 .hover-light:hover {
     color: #fff !important;
+}
+
+.card-hover {
+    transition: transform ease-in .3s;
+}
+
+.card-hover:hover {
+    transform: scale(1.03);
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
+    border: 0.01em solid #fa0 !important;
+    background: #373a3c !important;
+    color: #fa0;
 }

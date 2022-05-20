@@ -13,7 +13,6 @@ function showAvatar() {
         inputLabel: 'Password'
     })
 }
-document.getElementById("aboutMe").addEventListener("click", showTyped);
 
 function playSound(filename = relativePathMedia + "lofi-beat-chill") {
     /**
@@ -24,4 +23,36 @@ function playSound(filename = relativePathMedia + "lofi-beat-chill") {
     var oggSource = '<source src="' + filename + '.ogg" type="audio/ogg">';
     var embedSource = '<embed hidden"true" autostart="true" loop="false" src="' + filename + '.mp3>"';
     document.getElementById("sound").innerHTML = '<audio autoplay="autoplay" controls>' + mp3Source + oggSource + embedSource + '</audio>';
-} 
+}
+
+function showTyped(e) {
+    e.target.removeEventListener(e.type, showTyped);
+    let arrString = ['EniDev911', "'Marco Antonio'", 31, "'Chile'", true]
+    // Typed
+    let typed = new Typed('.typed', {
+        strings: [
+            `<i class='coding-typed'><spam style='color: darkorange;'>${arrString[0]}</spam> = <spam style='color: crimson;'>{<br>&nbsp;&nbsp;fullname:</spam> ${arrString[1]},<br>&nbsp;&nbsp;<spam style='color: crimson;'>age:</spam> ${arrString[2]},<br>&nbsp;&nbsp;<spam style='color: crimson;'>country:</spam> ${arrString[3]},<br>&nbsp;&nbsp;<spam style='color: crimson;'>availability:</spam> <spam style='color: peru; font-style: italic;'>true</spam>,<br>&nbsp;&nbsp;<spam style='color: crimson;'>profile:</spam> 'fullstack',<br>&nbsp;&nbsp;<spam style='color: crimson;'>stack:</spam>[<br>&nbsp;&nbsp;&nbsp;&nbsp;'mern','mean', 'mevn'<br>&nbsp;&nbsp;&nbsp;&nbsp;'lamp', 'wamp', 'mamp'<br>&nbsp;&nbsp;]<spam style='color: crimson;'>}</spam></i>`,
+        ],
+        typeSpeed: 50,
+        startDelay: 340,
+        backend: 75,
+        backDelay: 1500,
+        loopCount: 1,
+        contentType: "html",
+        cursorChar: "|",
+        showCursor: true,
+    });
+}
+
+document.getElementById("aboutMe").addEventListener("click", showTyped);
+
+// Enable popover bootstrap
+let popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle=""]'));
+let popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverList);
+});
+// Enable tooltip bootstrap
+let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+let tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+});

@@ -19,49 +19,17 @@
 <body>
 
   <!-- ************************ Navigation ******************************** -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-2 border-warning">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-2 border-warning">
     <div class="container">
       <div class="d-inline-block w-25">
         <a class="navbar-brand m-0 p-0" href="#">
-          <img src="assets/img/logo_sin_bg.png" class="img-fluid" style="height:3.1rem" onclick="showAvatar();">
+          <img src="assets/img/logo_sin_bg.png" class="img-fluid" style="height:3.1rem;" onclick="showAvatar();">
         </a>
       </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-controls="navContent"
         aria-expanded="false" aria-label="Toggle navigation" data-bs-target="#navContent">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <!-- Group buttons -->
-      <div class="btn-group btn-group-lg">
-        <!-- Facebook -->
-        <a href="https://www.facebook.com/profile.php?id=100009064421475" target="_blank"
-          class="btn btn-lg btn-warning btn-outline-primary border-0 text-dark hover-light">
-          <i class=" fab fa-facebook fs-2"></i> </a>
-        <!-- Twitter -->
-        <a href="https://twitter.com/MarcoContreraas" target="_blank"
-          class="btn btn-lg btn-warning btn-outline-info border-0 text-dark text-start hover-light">
-          <i class="fab fa-twitter fs-2"></i>
-        </a>
-        <!-- Github -->
-        <a href="https://github.com/enidev911" target="_blank"
-          class="btn btn-lg btn-warning btn-outline-dark border-0 ab text-start">
-          <i class="fab fa-github fs-2"></i>
-        </a>
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/marco-contreras-herrera-9b6952213/" target="_blank"
-          class="btn btn-lg btn-warning btn-outline-primary border-0 ab text-start text-dark hover-light">
-          <i class="fab fa-linkedin fs-2"></i>
-        </a>
-        <!-- Play -->
-        <button class="btn btn-warning btn-outline-light border-0 text-start text-dark" onclick="playSound();">
-          <i class="fas fa-play fs-3 text-dark ps-0"></i>
-        </button>
-        <!-- Cv -->
-        <a href="assets/docs/CV_Marco_Antonio_Contreras_Herrera__Comprimido.pdf"
-          class="btn btn-lg btn-warning btn-outline-secondary border-0 ab text-dark text-start hover-light"
-          download="CV-EniDev911.pdf">
-          <i class="fas fa-file-download fs-2"></i>
-        </a>
-      </div>
       <div class="collapse navbar-collapse" id="navContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
           <li class="nav-item">
@@ -98,51 +66,28 @@
           <video class="d-block w-100" autoplay loop muted>
             <source src="assets/media/01.mp4" type="video/mp4" />
           </video>
-          <div class="carousel-caption d-none d-md-block position-absolute top-50 start-50 translate-middle fs-3">
-            <p>
-              Nulla vitae elit libero, a pharetra augue mollis interdum.
-            </p>
-          </div>
         </div>
         <!-- second item -->
         <div class="carousel-item">
           <video class="d-block w-100" autoplay loop muted>
             <source src="assets/media/02.mp4" type="video/mp4" />
           </video>
-          <div class="carousel-caption d-none d-md-block position-absolute top-50 start-50 translate-middle fs-3">
-            <p>
-              Descansa tu mente, amplifica tu mente
-            </p>
-          </div>
         </div>
         <!-- thrid item -->
         <div class="carousel-item">
           <video class="d-block w-100" autoplay loop muted>
             <source src="assets/media/03.mp4" type="video/mp4" />
           </video>
-          <div class="carousel-caption d-none d-md-block fs-3">
-            <h3>
-              Observar un atardecer te hace sentir más fuerte.
-            </h3>
-            <p>
-              Un atardecer nos puede traer recuerdos de lo que hemos vivido o hemos superado y con ellos descubrir lo
-              que hemos aprendido con el paso del tiempo.
-            </p>
-          </div>
         </div>
         <!-- four item -->
         <div class="carousel-item">
           <video class="d-block w-100" autoplay loop muted>
             <source src="assets/media/04.mp4" type="video/mp4" />
           </video>
-          <div class="carousel-caption d-none d-md-block position-absolute top-50 start-50 fs-3">
-
-          </div>
         </div>
       </div>
       <!-- Inner -->
-
-      <!-- Controls -->
+      <!-- controls -->
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselVideo" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -160,15 +105,15 @@
   <section id="about" class="container my-5">
     <div class="row w-100 mx-auto">
       <div class="col-12 col-lg-5 mb-1">
-        <div class="rounded bg-body shadow-1 card-h">
+        <div class="rounded bg-body shadow-1 card-hover">
           <div class="w-100 shadow-sm">
-            <img src="assets/img/about/02.jpg" alt="" id="aboutMe" class="w-100 h-100 rounded"
-              style="border: 1px solid #CE3061;">
+            <img src="assets/img/about/01.png" alt="" id="aboutMe" class="w-100 h-100 rounded"
+              style="border: 2px solid #be080899; cursor: pointer;">
           </div>
         </div>
       </div>
       <div class="col-12 col-lg-7 coding">
-        <div class="rounded bg-light shadow-1 card-h py-4">
+        <div class="rounded bg-light shadow-1 card-hover py-4">
           <h4 class="fs-3 text-start px-3"><span class="typed"></span></h4>
         </div>
       </div>
@@ -176,10 +121,13 @@
     <div class="row mt-3 text-center mx-auto">
       <div class="col-12 col-md-6 col-lg-4 my-2">
         <!-- Cards-1 DevOps -->
-        <div class="card border card-h shadow-sm">
-          <h3 class="my-3 fw-bold">DevOps</h3>
-          <i class="fas fa-terminal fa-3x my-3"></i>
+        <div class="card border card-hover shadow-sm">
+          <div class="card-header p-0 m-0">
+            <img src="assets/img/about/02.png" alt="card" class="card-img-top">
+          </div>
           <div class="card-body">
+            <h3 class="my-3 fw-bold">DevOps</h3>
+            <i class="fas fa-terminal fa-3x my-3"></i>
             <p class="card-text my-3">A modo de abordar mi trabajo y para generar mayor valor a las plataformas
               empresariales. Las
               herramientas de automatización y prestación de servicios de alta calidad para una respuesta rápida a los
@@ -190,10 +138,13 @@
       </div>
       <!-- card-2 designer -->
       <div class="col-12 col-md-6 col-lg-4 my-2">
-        <div class="card border card-h shadow-2">
-          <h3 class="my-3 fw-bold">Diseñador</h3>
-          <i class="fas fa-drafting-compass fa-3x my-3"></i>
+        <div class="card border card-hover shadow-2">
+          <div class="card-header p-0 m-0">
+            <img src="assets/img/about/03.jpg" alt="card" class="card-img-top">
+          </div>
           <div class="card-body">
+            <h3 class="my-3 fw-bold">Diseñador</h3>
+            <i class="fas fa-drafting-compass fa-3x my-3"></i>
             <p class="card-text my-3">Después de trabajar como desarrollador <i>backend</i>, sentí la necesidad de
               aprender más
               sobre el
@@ -205,10 +156,13 @@
       </div>
       <!-- card-3 writer comic -->
       <div class="col-12 col-md-6 col-lg-4 my-2">
-        <div class="card border card-h shadow-sm">
-          <h3 class="my-3 fw-bold">Escritor de Cómics</h3>
-          <i class="fas fa-feather-alt fa-3x my-3"></i>
+        <div class="card border card-hover shadow-sm">
+          <div class="card-header p-0 m-0">
+            <img src="assets/img/about/04.jpg" alt="card" class="card-img-top">
+          </div>
           <div class="card-body">
+            <h3 class="my-3 fw-bold">Escritor de Cómics</h3>
+            <i class="fas fa-feather-alt fa-3x my-3"></i>
             <p class="card-text my-3">He escrito cómics desde que tenía 14 años de edad. Empecé a inspirarme en mis
               sueños y a diseñar
               personajes con los que me sentía identificado dentro de mi universo de fantasía.
@@ -230,7 +184,8 @@
   <script src="assets/js/lib/bootstrap.bundle.min.js"></script>
   <!-- Sweet Alert2 -->
   <script src="assets/js/lib/sweetalert2.min.js"></script>
-
+  <!-- typed -->
+  <script src="assets/js/lib/typed.js"></script>
   <script src="assets/js/functions.js"></script>
 </body>
 
