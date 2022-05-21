@@ -17,7 +17,6 @@
 </head>
 
 <body class="dark">
-
   <!-- ************************ Navigation ******************************** -->
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top border-bottom border-2 border-warning">
     <div class="container">
@@ -118,7 +117,7 @@
       </div>
     </div>
     <div class="row mt-3 text-center mx-auto">
-      <div class="col-12 col-md-6 col-lg-4 my-2">
+      <div class="col-12 col-md-6 col-lg-4 col-xl my-2">
         <!-- Cards-1 DevOps -->
         <div class="card border card-hover shadow card-dark">
           <div class="card-header p-0 m-0">
@@ -136,7 +135,7 @@
       </div>
       <!-- card-2 designer -->
       <div class="col-12 col-md-6 col-lg-4 my-2">
-        <div class="card border card-hover shadow-2">
+        <div class="card border card-hover shadow-2 card-dark">
           <div class="card-header p-0 m-0">
             <i class="fas fa-drafting-compass fa-3x my-3"></i>
           </div>
@@ -153,7 +152,7 @@
       </div>
       <!-- card-3 writer comic -->
       <div class="col-12 col-md-6 col-lg-4 my-2">
-        <div class="card border card-hover shadow-sm">
+        <div class="card border card-hover shadow-sm card-dark">
           <div class="card-header p-0 m-0">
             <i class="fas fa-feather-alt fa-3x my-3"></i>
           </div>
@@ -170,7 +169,7 @@
   </section>
 
   <!-- ******************** Work sections ****************************** -->
-  <section id="Mis-trabajos" class="my-5 p-5 bg-dark border border-3 border-start-0 border-end-0 border-warning">
+  <section id="work" class="my-5 p-5 bg-dark border border-3 border-start-0 border-end-0 border-warning">
     <h2 class="display-4 fw-bold text-center text-light mb-3">Trabajos</h2>
     <div class="row">
       <div class="col-12 col-md-6 col-lg-4 py-2">
@@ -184,23 +183,23 @@
               <!-- tech -->
               <div class="accordion-item mb-2">
                 <h2 class="accordion-header" id="headingTech">
-                  <button type="button" class="btn btn-dark btn-lg btn-outline-warning border-0 w-100 text-uppercase"
+                  <button type="button"
+                    class="btn btn-dark btn-lg btn-outline-warning border-0 w-100 text-uppercase text-start"
                     data-bs-toggle="collapse" data-bs-target="#collapseTech" aria-expanded="true"
-                    aria-controls="collapseTech">Tecnologías</button>
+                    aria-controls="collapseTech">Tecnologías
+                    <i class="fas fa-caret-down fs-3"></i>
+                  </button>
                 </h2>
                 <div class="accordion-collapse collapse" id="collapseTech" aria-labelledby="headingTech"
                   data-bs-parent="#accordionCard">
-                  <div class="accordion-body d-flex justify-content-center">
+                  <div class="accordion-body d-flex justify-content-center mb-3">
                     <div class="w-25 flex-shrink-1 flex-grow-1">
-                      <img src="assets/img/skills/html_5_96px.png" alt="html5" class="img-fluid w-75"
-                        data-bs-toggle="tooltip" title="Hypertext Markup Language">
-                      <p class="fw-bold fs-5">HTML5<br>Semantic Web</p>
+                      <img src="assets/img/logo/html.svg" alt="html5" class="img-fluid w-75 logo"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom" title="Hypertext Markup Language">
                     </div>
                     <div class="w-25 flex-shrink-1 flex-grow-1">
-                      <img src="assets/img/skills/css3_96px.png" alt="css3" class="img-fluid w-75"
-                        data-bs-toggle="tooltip" title="Cascading Style Sheets">
-                      <p class="fw-bold fs-5">CSS<br>Media Query</p>
-
+                      <img src="assets/img/logo/css.svg" alt="css3" class="img-fluid w-75 logo" data-bs-toggle="tooltip"
+                        data-bs-placement="bottom" title="Cascading Style Sheets">
                     </div>
                   </div>
                 </div>
@@ -208,9 +207,10 @@
               <!-- description -->
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingDescription">
-                  <button type="button" class="btn btn-dark btn-lg btn-outline-warning border-0 w-100 text-uppercase"
+                  <button type="button"
+                    class="btn btn-dark btn-lg btn-outline-warning border-0 w-100 text-uppercase text-start"
                     data-bs-toggle="collapse" data-bs-target="#collapseDescription" aria-expanded="true"
-                    aria-controls="collapseDescription">Descripción</button>
+                    aria-controls="collapseDescription">Descripción <i class="fas fa-caret-down fs-3"></i></button>
                 </h2>
                 <div class="accordion-collapse collapse" id="collapseDescription" aria-labelledby="headingDescription"
                   data-bs-parent="#accordionCard">
@@ -228,14 +228,15 @@
             </div>
             <!-- end accordion -->
           </div>
+          <!-- footer buttons card-1 -->
           <div class=" card-footer d-flex justify-content-between">
-            <a href="https://enidev911.github.io/fullstackjsg33/3-css/landing-page/courses/" target="_blank"
-              class="flex-fill btn btn-dark btn-lg btn-outline-warning border-0 me-2">
+            <a href="https://enidev911.github.io/fullstackjsg33/src/chanllenges/module-1/3-css/landing-page/courses/"
+              target="_blank" class="flex-fill btn btn-dark btn-outline-warning border-0 me-2">
               <i class="far fa-eye"></i>
-              Ver en vivo
+              Ver demo
             </a>
-            <a href="https://github.com/EniDev911/fullstackjsg33/tree/main/4-positions/iguana-page" target="_blank"
-              class="flex-fill btn btn-dark btn-lg btn-outline-warning border-0">
+            <a href="https://github.com/EniDev911/fullstackjsg33/blob/main/src/chanllenges/module-1/3-css/landing-page/courses/index.html"
+              target="_blank" class="flex-fill btn btn-dark btn-outline-warning border-0">
               <i class="fas fa-code"></i>
               Código
             </a>
@@ -253,22 +254,21 @@
               <!-- tech -->
               <div class="accordion-item mb-2">
                 <h2 class="accordion-header" id="headingTech2">
-                  <button type="button" class="btn btn-dark btn-lg btn-outline-warning border-0 w-100 text-uppercase"
+                  <button type="button"
+                    class="btn btn-dark btn-lg btn-outline-warning border-0 w-100 text-uppercase text-start"
                     data-bs-toggle="collapse" data-bs-target="#collapseTech2" aria-expanded="true"
-                    aria-controls="collapseTech2">Tecnologías</button>
+                    aria-controls="collapseTech2">Tecnologías <i class="fas fa-caret-down fs-3"></i></button>
                 </h2>
                 <div class="accordion-collapse collapse" id="collapseTech2" aria-labelledby="headingTech2"
                   data-bs-parent="#accordionCard2">
-                  <div class="accordion-body d-flex justify-content-center">
+                  <div class="accordion-body d-flex justify-content-center mb-3">
                     <div class="w-25 flex-shrink-1 flex-grow-1">
-                      <img src="assets/img/skills/html_5_96px.png" alt="html5" class="img-fluid w-75"
-                        data-bs-toggle="tooltip" title="Hypertext Markup Language">
-                      <p class="fw-bold fs-5">HTML5<br>Semantic Web</p>
+                      <img src="assets/img/logo/html.svg" alt="html5" class="img-fluid w-75 logo"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom" title="Hypertext Markup Language">
                     </div>
                     <div class="w-25 flex-shrink-1 flex-grow-1">
-                      <img src="assets/img/skills/css3_96px.png" alt="css3" class="img-fluid w-75"
-                        data-bs-toggle="tooltip" title="Cascading Style Sheets">
-                      <p class="fw-bold fs-5">CSS<br>Media Query</p>
+                      <img src="assets/img/logo/css.svg" alt="css3" class="img-fluid w-75 logo" data-bs-toggle="tooltip"
+                        data-bs-placement="bottom" title="Cascading Style Sheets">
                     </div>
                   </div>
                 </div>
@@ -276,9 +276,10 @@
               <!-- description -->
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingDescription2">
-                  <button type="button" class="btn btn-dark btn-lg btn-outline-warning border-0 w-100 text-uppercase"
+                  <button type="button"
+                    class="btn btn-dark btn-lg btn-outline-warning border-0 w-100 text-uppercase text-start"
                     data-bs-toggle="collapse" data-bs-target="#collapseDescription2" aria-expanded="true"
-                    aria-controls="collapseDescription2">Descripción</button>
+                    aria-controls="collapseDescription2">Descripción <i class="fas fa-caret-down fs-3"></i></button>
                 </h2>
                 <div class="accordion-collapse collapse" id="collapseDescription2" aria-labelledby="headingDescription2"
                   data-bs-parent="#accordionCard2">
@@ -296,14 +297,15 @@
             </div>
             <!-- end accordion -->
           </div>
+          <!-- footer buttons card-2 -->
           <div class="card-footer d-flex justify-content-between">
-            <a href="https://enidev911.github.io/fullstackjsg33/4-positions/iguana-page/index.html" target="_blank"
-              class="flex-fill btn btn-dark btn-lg btn-outline-warning border-0 me-2">
+            <a href="https://enidev911.github.io/fullstackjsg33/src/chanllenges/module-1/4-positions/iguana-page/"
+              target="_blank" class="flex-fill btn btn-dark btn-outline-warning border-0 me-2">
               <i class="far fa-eye"></i>
-              Ver en vivo
+              Ver demo
             </a>
-            <a href="https://github.com/EniDev911/fullstackjsg33/tree/main/4-positions/iguana-page" target="_blank"
-              class="flex-fill btn btn-dark btn-lg btn-outline-warning border-0">
+            <a href="https://github.com/EniDev911/fullstackjsg33/tree/main/src/chanllenges/module-1/4-positions/iguana-page/index.html"
+              target="_blank" class="flex-fill btn btn-dark btn-outline-warning border-0">
               <i class="fas fa-code"></i>
               Código
             </a>
@@ -320,27 +322,25 @@
               <!-- tech -->
               <div class="accordion-item mb-2">
                 <h2 class="accordion-header" id="headingTech3">
-                  <button type="button" class="btn btn-dark btn-lg btn-outline-warning border-0 w-100 text-uppercase"
+                  <button type="button"
+                    class="btn btn-dark btn-lg btn-outline-warning border-0 w-100 text-uppercase text-start"
                     data-bs-toggle="collapse" data-bs-target="#collapseTech3" aria-expanded="true"
-                    aria-controls="collapseTech3">Tecnologías</button>
+                    aria-controls="collapseTech3">Tecnologías <i class="fas fa-caret-down fs-3"></i></button>
                 </h2>
                 <div class="accordion-collapse collapse" id="collapseTech3" aria-labelledby="headingTech3"
                   data-bs-parent="#accordionCard3">
-                  <div class="accordion-body d-flex flex-wrap justify-content-center text-center">
+                  <div class="accordion-body d-flex flex-wrap justify-content-center text-center mb">
                     <div class="w-50 flex-shrink-1 flex-grow-1">
-                      <img src="assets/img/skills/html_5_96px.png" alt="html5" class="img-fluid w-75"
-                        data-bs-toggle="tooltip" title="Hypertext Markup Language">
-                      <p class="fw-bold fs-5">HTML5<br>Semantic Web</p>
+                      <img src="assets/img/logo/html.svg" alt="html5" class="img-fluid w-75 logo"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom" title="Hypertext Markup Language">
                     </div>
-                    <div class="w-50 flex-shrink-1 flex-grow-1">
-                      <img src="assets/img/skills/css3_96px.png" alt="css3" class="img-fluid w-75"
-                        data-bs-toggle="tooltip" title="Cascading Style Sheets">
-                      <p class="fw-bold fs-5">CSS<br>Media Query</p>
+                    <div class="w-50 flex-shrink-1 flex-grow-1 mb-5">
+                      <img src="assets/img/logo/css.svg" alt="css3" class="img-fluid w-75 logo" data-bs-toggle="tooltip"
+                        data-bs-placement="bottom" title="Cascading Style Sheets">
                     </div>
                     <div class="w-50 flex-shrink-1 text-center">
-                      <img src=" assets/img/skills/bootstrap_96px.png" alt="css3" class="img-fluid w-75"
+                      <img src="assets/img/logo/bootstrap.svg" alt="bootstrap" class="img-fluid w-75 logo"
                         data-bs-toggle="tooltip" title="Bootstrap 5">
-                      <p class="fw-bold fs-5">Bootstrap<br>Framework CSS</p>
                     </div>
                   </div>
                 </div>
@@ -348,9 +348,10 @@
               <!-- description -->
               <div class=" accordion-item">
                 <h2 class="accordion-header" id="headingDescription3">
-                  <button type="button" class="btn btn-dark btn-lg btn-outline-warning border-0 w-100 text-uppercase"
+                  <button type="button"
+                    class="btn btn-dark btn-lg btn-outline-warning border-0 w-100 text-uppercase text-start"
                     data-bs-toggle="collapse" data-bs-target="#collapseDescription3" aria-expanded="true"
-                    aria-controls="collapseDescription3">Descripción</button>
+                    aria-controls="collapseDescription3">Descripción <i class="fas fa-caret-down fs-3"></i></button>
                 </h2>
                 <div class="accordion-collapse collapse" id="collapseDescription3" aria-labelledby="headingDescription3"
                   data-bs-parent="#accordionCard3">
@@ -371,14 +372,15 @@
             </div>
             <!-- end accordion -->
           </div>
+          <!-- footer buttons card-3 -->
           <div class="card-footer d-flex justify-content-between">
-            <a href="https://enidev911.github.io/fullstackjsg33/5-bootstrap/" target="_blank"
-              class="flex-fill btn btn-dark btn-lg btn-outline-warning border-0 me-2">
+            <a href="https://enidev911.github.io/fullstackjsg33/src/chanllenges/module-1/5-bootstrap/cuppons/"
+              target="_blank" class="flex-fill btn btn-dark btn-outline-warning border-0 me-2">
               <i class="far fa-eye"></i>
-              Ver en vivo
+              Ver demo
             </a>
-            <a href="https://github.com/EniDev911/fullstackjsg33/tree/main/5-bootstrap/cuppons" target="_blank"
-              class="flex-fill btn btn-dark btn-lg btn-outline-warning border-0">
+            <a href="https://github.com/EniDev911/fullstackjsg33/blob/main/src/chanllenges/module-1/5-bootstrap/cuppons/index.html"
+              target="_blank" class="flex-fill btn btn-dark btn-outline-warning border-0">
               <i class="fas fa-code"></i>
               Código
             </a>

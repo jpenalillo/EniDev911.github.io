@@ -20,7 +20,7 @@
     --main-bg-color: hsl(0, 0%, 90%);
     --primary-color: #fa0;
     --font-normal: "Scope One";
-    --fonts-code: "Victor Mono";
+    --font-code: "Cascadia Code";
 }
 
 body {
@@ -62,7 +62,9 @@ body.dark {
 
 
 /* About */
-#about {}
+#about {
+    width: 100%;
+}
 
 .coding,
 .coding-typed {
@@ -70,7 +72,38 @@ body.dark {
     font-style: normal !important;
 }
 
+/* Works */
 
+#work .logo {
+    filter: drop-shadow(2px 8px 6px #000);
+}
+
+#work .logo:hover {
+    will-change: transform, filter;
+    animation: movelogo 1s infinite alternate;
+}
+
+@keyframes movelogo {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+#work .card .card-body {
+    font-family: var(--font-code);
+}
+
+.accordion-header button i {
+    float: right;
+}
+
+.card-footer {
+    font-family: var(--font-code);
+}
 
 /* hover and transitions */
 
@@ -111,6 +144,4 @@ body.dark {
         background-position: center center;
         border-bottom: 2px solid #fa0;
     }
-
-
 }

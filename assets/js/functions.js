@@ -1,6 +1,10 @@
 const relativePathImage = "../../assets/img/";
 const relativePathMedia = "../../assets/media/"
 
+// document.querySelector(".collapse.show").each(function () {
+//     this.preventDefault(".card-header").select(".fas").classList.add("fa-code");
+// });
+
 function showAvatar() {
     Swal.fire({
         title: "<h2 class='text-center'><code class='fs-1 text-center'><i class='fas fa-user-secret fs-1'></i> {EniDev911}</code></h2>",
