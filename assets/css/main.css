@@ -27,7 +27,6 @@ body {
     padding: 0;
     margin: 0;
     font-family: var(--font-normal);
-    font-size: 1.2rem;
     background-color: var(--main-bg-color);
 
 }
@@ -51,6 +50,7 @@ body.dark {
     --opacity: 1;
     background: rgba(0, 0, 0, var(--opacity)) !important;
     border-bottom: 2px solid var(--primary-color) !important;
+    font-family: var(--font-code);
 }
 
 /* section hero */
@@ -95,6 +95,24 @@ body.dark {
 
 #work .card .card-body {
     font-family: var(--font-code);
+    background-color: var(--main-bg-color);
+    overflow: hidden;
+}
+
+.accordion-item {
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+}
+
+/* .accordion-body p {
+    font-size: 9px !important;
+} */
+
+.accordion-item button {
+    /* border: 1px solid #fa0 !important; */
+    border: 1px solid var(--text-color) !important;
+    color: var(--text-color);
+
 }
 
 .accordion-header button i {
@@ -102,7 +120,15 @@ body.dark {
 }
 
 .card-footer {
+    background-color: var(--main-bg-color);
     font-family: var(--font-code);
+    border-top: 1px solid var(--text-color);
+}
+
+.card-footer a {
+    /* border: 1px solid #fa0 !important;*/
+    border: 1px solid var(--text-color) !important;
+    color: var(--text-color);
 }
 
 /* hover and transitions */
@@ -126,11 +152,11 @@ body.dark {
 /* media querie */
 @media only screen and (max-width: 680px) {
     body {
-        background-color: var(--dark-bg-color);
+        background-color: var(--main-bg-color);
     }
 
     .carousel {
-        display: none;
+        visibility: hidden;
     }
 
     #hero-section {

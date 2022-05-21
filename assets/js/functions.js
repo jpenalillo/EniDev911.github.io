@@ -5,6 +5,9 @@ const relativePathMedia = "../../assets/media/"
 //     this.preventDefault(".card-header").select(".fas").classList.add("fa-code");
 // });
 
+
+const menu = document.getElementById("menu");
+
 function showAvatar() {
     Swal.fire({
         title: "<h2 class='text-center'><code class='fs-1 text-center'><i class='fas fa-user-secret fs-1'></i> {EniDev911}</code></h2>",
@@ -35,7 +38,7 @@ function showTyped(e) {
     // Typed
     let typed = new Typed('.typed', {
         strings: [
-            `<i class='coding-typed'><spam style='color: darkorange;'>${arrString[0]}</spam> = <spam style='color: crimson;'>{<br>&nbsp;&nbsp;fullname:</spam> ${arrString[1]},<br>&nbsp;&nbsp;<spam style='color: crimson;'>age:</spam> ${arrString[2]},<br>&nbsp;&nbsp;<spam style='color: crimson;'>country:</spam> ${arrString[3]},<br>&nbsp;&nbsp;<spam style='color: crimson;'>availability:</spam> <spam style='color: peru; font-style: italic;'>true</spam>,<br>&nbsp;&nbsp;<spam style='color: crimson;'>profile:</spam> 'fullstack',<br>&nbsp;&nbsp;<spam style='color: crimson;'>stack:</spam>[<br>&nbsp;&nbsp;&nbsp;&nbsp;'mern','mean', 'mevn'<br>&nbsp;&nbsp;&nbsp;&nbsp;'lamp', 'wamp', 'mamp'<br>&nbsp;&nbsp;]<spam style='color: crimson;'>}</spam></i>`,
+            `<i class='coding-typed'><spam style='color: darkorange;'>${arrString[0]}</spam> = <spam style='color: #fa9;'>{<br>&nbsp;&nbsp;fullname:</spam> ${arrString[1]},<br>&nbsp;&nbsp;<spam style='color: #fa9;'>age:</spam> ${arrString[2]},<br>&nbsp;&nbsp;<spam style='color: #fa9;'>country:</spam> ${arrString[3]},<br>&nbsp;&nbsp;<spam style='color: #fa9;'>availability:</spam> <spam style='color: peru; font-style: italic;'>true</spam>,<br>&nbsp;&nbsp;<spam style='color: #fa9;'>profile:</spam> 'fullstack',<br>&nbsp;&nbsp;<spam style='color: #fa9;'>stack:</spam>[<br>&nbsp;&nbsp;&nbsp;&nbsp;'mern','mean', 'mevn'<br>&nbsp;&nbsp;&nbsp;&nbsp;'lamp', 'wamp', 'mamp'<br>&nbsp;&nbsp;]<spam style='color: #fa9;'>}</spam></i>`,
         ],
         typeSpeed: 50,
         startDelay: 340,
