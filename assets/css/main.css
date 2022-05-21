@@ -131,6 +131,13 @@ body.dark {
     color: var(--text-color);
 }
 
+
+/* Work sections */
+#work h2 {
+    font-family: var(--font-code);
+    text-transform: uppercase;
+}
+
 /* hover and transitions */
 
 .hover-light:hover {

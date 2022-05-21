@@ -19,14 +19,13 @@
 <body class="dark">
   <!-- ************************ Navigation ******************************** -->
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top border-bottom border-2 border-warning">
-    <div class="container">
-      <div class="d-inline-block w-25">
-        <a class="navbar-brand m-0 p-0" href="#">
-          <img src="assets/img/logo_sin_bg.png" class="img-fluid" style="height:3.1rem;" onclick="showAvatar();">
-        </a>
-      </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-controls="navContent"
-        aria-expanded="false" aria-label="Toggle navigation" data-bs-target="#navContent">
+    <div class="container-sm">
+      <a class="navbar-brand m-0 p-0" href="#">
+        <img src="assets/img/logo_sin_bg.png" class="img-fluid" style="height:3.1rem;" onclick="showAvatar();">
+      </a>
+
+      <button class="navbar-toggler border-secondary" type="button" data-bs-toggle="collapse"
+        aria-controls="navbarcontent" aria-expanded="false" aria-label="Toggle navigation" data-bs-target="#navContent">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navContent">
@@ -63,18 +62,23 @@
         <div class="carousel-item active">
           <video class="d-block w-100" autoplay loop muted>
             <source src="assets/media/_01.mp4" type="video/mp4" />
+            Tu navegador no puede reproducirlo
           </video>
         </div>
         <!-- second item -->
         <div class="carousel-item">
           <video class="d-block w-100" autoplay loop muted>
             <source src="assets/media/_02.mp4" type="video/mp4" />
+            Tu navegador no puede reproducirlo
+
           </video>
         </div>
         <!-- thrid item -->
         <div class="carousel-item">
           <video class="d-block w-100" autoplay loop muted>
             <source src="assets/media/_03.mp4" type="video/mp4" />
+            Tu navegador no puede reproducirlo
+
           </video>
         </div>
       </div>
@@ -160,9 +164,8 @@
       </div>
     </div>
   </section>
-
   <!-- ******************** Work sections ****************************** -->
-  <section id="work" class="my-5 p-3 bg-dark border border-3 border-start-0 border-end-0 border-warning">
+  <section id="work" class="container-sm my-5 p-3 bg-dark bg-gradient rounded border border-secondary shadow">
     <h2 class="display-4 fw-bold text-center text-light mb-3">Trabajos</h2>
     <div class="row">
       <div class="col-12 col-md-6 col-lg-4 py-2">
@@ -421,12 +424,12 @@
 
 
   <!-- Libs and scripts -->
-  <!-- Core Bootstrap -->
-  <script src="assets/js/lib/bootstrap.bundle.min.js"></script>
   <!-- Sweet Alert2 -->
   <script src="assets/js/lib/sweetalert2.min.js"></script>
   <!-- typed -->
   <script src="assets/js/lib/typed.js"></script>
+  <!-- Core Bootstrap -->
+  <script src="assets/js/lib/bootstrap.bundle.min.js"></script>
   <script src="assets/js/functions.js"></script>
 </body>
 
