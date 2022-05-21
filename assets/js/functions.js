@@ -46,6 +46,9 @@ function showTyped(e) {
 
 document.getElementById("aboutMe").addEventListener("click", showTyped);
 
+
+// dark-mode
+
 // Enable popover bootstrap
 let popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle=""]'));
 let popoverList = popoverTriggerList.map(function (popoverTriggerEl) {

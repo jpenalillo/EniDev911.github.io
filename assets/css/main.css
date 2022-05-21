@@ -1,19 +1,56 @@
 /* fonts */
 @font-face {
-    font-family: "Cascadia code";
-    src: url("../fonts/CascadiaCode.ttf");
+    font-family: Cascadia Code;
+    src: url(../fonts/CascadiaCode.ttf);
+
+}
+
+@font-face {
+    font-family: Victor Mono;
+    src: url(../fonts/VictorMono.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Scope One;
+    src: url(../fonts/ScopeOne-Regular.ttf);
+}
+
+:root {
+    --main-bg-color: hsl(0, 0%, 90%);
+    --primary-color: #fa0;
+    --font-normal: "Scope One";
+    --fonts-code: "Victor Mono";
 }
 
 body {
     padding: 0;
     margin: 0;
+    font-family: var(--font-normal);
+    font-size: 1.2rem;
+    background-color: var(--main-bg-color);
 
 }
 
+body.dark {
+    --text-color: hsl(0, 0%, 83%);
+    --main-bg-color: hsl(0, 0%, 15%);
+}
+
+.card-dark {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #fa0;
+    background: #373a3c;
+    color: var(--text-color);
+
+}
 
 /* Nav */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.3) !important;
+    --opacity: 1;
+    background: rgba(0, 0, 0, var(--opacity)) !important;
+    border-bottom: 2px solid var(--primary-color) !important;
 }
 
 /* section hero */
@@ -23,17 +60,6 @@ body {
     border-bottom: 2px solid #fa0;
 }
 
-.terminal {
-    width: 100%;
-    height: auto;
-    background-color: #0e0f0f !important;
-    border-top: 30px solid #ccc;
-    border-left: 3px solid #ccc;
-    border-right: 3px solid #ccc;
-    border-bottom: 3px solid #ccc;
-    color: blanchedalmond;
-
-}
 
 /* About */
 #about {}
@@ -44,6 +70,8 @@ body {
     font-style: normal !important;
 }
 
+
+
 /* hover and transitions */
 
 .hover-light:hover {
@@ -51,7 +79,7 @@ body {
 }
 
 .card-hover {
-    transition: transform ease-in .3s;
+    transition: transform ease-in-out .3s;
 }
 
 .card-hover:hover {
@@ -65,7 +93,7 @@ body {
 /* media querie */
 @media only screen and (max-width: 680px) {
     body {
-        background-color: #fa0 !important;
+        background-color: var(--dark-bg-color);
     }
 
     .carousel {
