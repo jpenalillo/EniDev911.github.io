@@ -18,25 +18,36 @@
 
 <body class="dark">
   <!-- ************************ Navigation ******************************** -->
-  <nav class="navbar navbar-expand-lg navbar-dark sticky-top border-bottom border-2 border-warning">
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top border-bottom border-2 border-warning m-0 p-0">
     <div class="container-sm">
       <a class="navbar-brand m-0 p-0" href="#">
-        <img src="assets/img/logo_sin_bg.png" class="img-fluid" style="height:3.1rem;" onclick="showAvatar();">
+        <img src="assets/img/logo_sin_bg.png" class="img-fluid" style="height:3.3rem;" onclick="showAvatar();">
       </a>
-
+      <div class="switches border border-danger">
+        <div id="toggle-theme" class="toggle-theme">
+          <img id="toggle-icon" src="assets/img/logo/moon.svg" alt="icon theme" class="toggle-theme__icon">
+          <p id="toggle-text" class="toggle-theme__text">Dark Mode</p>
+        </div>
+        <div class="colors">
+          <div class="colors__item colors__item--blue"></div>
+          <div class="colors__item colors__item--green"></div>
+          <div class="colors__item colors__item--purple"></div>
+          <div class="colors__item colors__item--orange"></div>
+        </div>
+      </div>
       <button class="navbar-toggler border-secondary" type="button" data-bs-toggle="collapse"
         aria-controls="navbarcontent" aria-expanded="false" aria-label="Toggle navigation" data-bs-target="#navContent">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
-          <li class="nav-item">
+      <div class="collapse navbar-collapse justify-content-end" id="navContent">
+        <ul class="navbar-nav fs-5">
+          <li class="nav-item py-2 pe-2">
             <a class="nav-link" href="#about">Acerca de mi</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item py-2 pe-2">
             <a class="nav-link" href="#works">Trabajos</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item py-2">
             <a class="nav-link" href="#contacts">Contacto</a>
           </li>
         </ul>
@@ -165,19 +176,18 @@
     </div>
   </section>
   <!-- ******************** Work sections ****************************** -->
-  <section id="work" class="container-sm my-5 p-3 bg-dark bg-gradient rounded border border-secondary shadow">
+  <section id="works" class="container-sm my-5 p-3 bg-dark bg-gradient rounded border border-secondary shadow">
     <h2 class="display-4 fw-bold text-center text-light mb-3">Trabajos</h2>
     <div class="row">
       <div class="col-12 col-md-6 col-lg-4 py-2">
         <!-- Card-1 Landing-page -->
         <article class="card">
-          <img src="assets/img/card-1.png" alt="css trabajo" class="img-top border border-warning rounded"
-            data-bs-toggle="modal" data-bs-target="#modalChallenge-1" style="cursor: pointer;">
-          <div class="card-body text-center">
+          <img src="assets/img/card-1.png" alt="css trabajo" class="img-top border border-warning rounded">
+          <div class="card-body text-center card-dark">
             <!-- accordion -->
             <div class="accordion" id="accordionCard">
               <!-- tech -->
-              <div class="accordion-item mb-2">
+              <div class="accordion-item border-0 mb-2">
                 <h2 class="accordion-header" id="headingTech">
                   <button type="button"
                     class="btn btn-dark btn-lg btn-outline-warning border-0 w-100 text-uppercase text-start"
@@ -201,7 +211,7 @@
                 </div>
               </div>
               <!-- description -->
-              <div class="accordion-item">
+              <div class="accordion-item border-0">
                 <h2 class="accordion-header" id="headingDescription">
                   <button type="button"
                     class="btn btn-dark btn-lg btn-outline-warning border-0 w-100 text-uppercase text-start"
@@ -242,13 +252,12 @@
       <!-- Card-2 Iguana-Page -->
       <div class="col-12 col-md-6 col-lg-4 py-2">
         <article class="card">
-          <img src="assets/img/card-2.png" alt="iguana trabajo" class="img-top border border-warning rounded"
-            data-bs-toggle="modal" data-bs-target="#modalChallenge-2" style="cursor:pointer;">
-          <div class="card-body text-center">
+          <img src="assets/img/card-2.png" alt="iguana trabajo" class="img-top border border-warning rounded">
+          <div class="card-body text-center card-dark">
             <!-- accordion -->
             <div class="accordion" id="accordionCard2">
               <!-- tech -->
-              <div class="accordion-item mb-2">
+              <div class="accordion-item mb-2 border-0">
                 <h2 class="accordion-header" id="headingTech2">
                   <button type="button"
                     class="btn btn-dark btn-lg btn-outline-warning border-0 w-100 text-uppercase text-start"
@@ -270,7 +279,7 @@
                 </div>
               </div>
               <!-- description -->
-              <div class="accordion-item">
+              <div class="accordion-item border-0">
                 <h2 class="accordion-header" id="headingDescription2">
                   <button type="button"
                     class="btn btn-dark btn-lg btn-outline-warning border-0 w-100 text-uppercase text-start"
@@ -312,14 +321,13 @@
       <div class="col-12 col-md-6 col-lg-4 py-2">
         <article class="card">
           <img src="assets/img/card-3.png" alt="cuppons trabajo" class="img-card-top border border-warning rounded">
-          <div class="card-body">
+          <div class="card-body card-dark">
             <!-- accordion -->
             <div class="accordion" id="accordionCard3">
               <!-- tech -->
-              <div class="accordion-item mb-2">
-                <h2 class="accordion-header" id="headingTech3">
-                  <button type="button"
-                    class="btn btn-dark btn-lg btn-outline-warning border-0 w-100 text-uppercase text-start"
+              <div class="accordion-item mb-2 border-0">
+                <h2 class="accordion-heade" id="headingTech3">
+                  <button type="button" class="btn btn-dark btn-lg btn-outline-warning w-100 text-uppercase text-start"
                     data-bs-toggle="collapse" data-bs-target="#collapseTech3" aria-expanded="true"
                     aria-controls="collapseTech3">Tecnologías <i class="fas fa-caret-down fs-3"></i></button>
                 </h2>
@@ -342,7 +350,7 @@
                 </div>
               </div>
               <!-- description -->
-              <div class=" accordion-item">
+              <div class=" accordion-item border-0">
                 <h2 class="accordion-header" id="headingDescription3">
                   <button type="button"
                     class="btn btn-dark btn-lg btn-outline-warning border-0 w-100 text-uppercase text-start"

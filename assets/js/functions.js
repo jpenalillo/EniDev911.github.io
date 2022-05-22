@@ -1,14 +1,19 @@
 const relativePathImage = "../../assets/img/";
 const relativePathMedia = "../../assets/media/"
 
-// document.querySelector(".collapse.show").each(function () {
-//     this.preventDefault(".card-header").select(".fas").classList.add("fa-code");
-// });
-
-
-const menu = document.getElementById("menu");
 
 function showAvatar() {
+    Swal.fire({
+        title: "<h2 class='text-center'><code class='fs-1 text-center' style='color: #f50;'><i class='fas fa-user-secret fs-1'></i> {EniDev911}</code></h2>",
+        imageUrl: relativePathImage + "logo/logo_con_bg.png",
+        imageWidth: "200px",
+        showConfirmButton: false,
+        showCloseButton: true,
+        closeButtonHtml: "<i class='fas fa-times'></i>",
+    })
+}
+
+function showContactForm() {
     Swal.fire({
         title: "<h2 class='text-center'><code class='fs-1 text-center'><i class='fas fa-user-secret fs-1'></i> {EniDev911}</code></h2>",
         imageUrl: relativePathImage + "logo_sin_bg.png",

@@ -16,6 +16,7 @@
     src: url(../fonts/ScopeOne-Regular.ttf);
 }
 
+/* ===== color palette  global =========== */
 :root {
     --main-bg-color: hsl(0, 0%, 90%);
     --primary-color: #fa0;
@@ -42,22 +43,62 @@ body.dark {
     border-bottom: 2px solid #fa0;
     background: #373a3c;
     color: var(--text-color);
-
 }
 
 /* Nav */
 .navbar {
     --opacity: 1;
-    background: rgba(0, 0, 0, var(--opacity)) !important;
+    background: rgba(25, 20, 20, var(--opacity)) !important;
     border-bottom: 2px solid var(--primary-color) !important;
     font-family: var(--font-code);
+    text-transform: uppercase;
+}
+
+
+.switches {
+    height: 60px;
+    margin-left: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toggle-theme {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.toggle-theme__icon {
+    align-items: center;
+    margin-right: 0.5rem;
+    width: 20px;
+}
+
+.toggle-theme__text {
+    font-size: 0.8rem;
+    align-self: center;
+}
+
+.nav-item {
+    transition: background .4s ease-in-out;
+}
+
+.nav-item:hover {
+    background: var(--primary-color);
+}
+
+.nav-link:hover {
+    color: var(--main-bg-color) !important;
+    font-weight: bold;
 }
 
 /* section hero */
 #hero-section {
     width: 100%;
     height: auto;
-    border-bottom: 2px solid #fa0;
+    border-bottom: 2px solid var(--primary-color);
 }
 
 
@@ -74,11 +115,11 @@ body.dark {
 
 /* Works */
 
-#work .logo {
+#works .logo {
     filter: drop-shadow(2px 8px 6px #000);
 }
 
-#work .logo:hover {
+#works .logo:hover {
     will-change: transform, filter;
     animation: movelogo 1s infinite alternate;
 }
@@ -93,20 +134,22 @@ body.dark {
     }
 }
 
-#work .card .card-body {
+#works .card .card-body {
     font-family: var(--font-code);
     background-color: var(--main-bg-color);
     overflow: hidden;
 }
 
+#works h2 {
+    font-family: var(--font-code);
+    text-transform: uppercase;
+}
+
 .accordion-item {
     background-color: var(--main-bg-color);
     color: var(--text-color);
+    font-family: var(--font-code);
 }
-
-/* .accordion-body p {
-    font-size: 9px !important;
-} */
 
 .accordion-item button {
     /* border: 1px solid #fa0 !important; */
@@ -131,12 +174,6 @@ body.dark {
     color: var(--text-color);
 }
 
-
-/* Work sections */
-#work h2 {
-    font-family: var(--font-code);
-    text-transform: uppercase;
-}
 
 /* hover and transitions */
 
