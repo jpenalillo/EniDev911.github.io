@@ -1,5 +1,5 @@
-const relativePathImage = "../../assets/img/";
-const relativePathMedia = "../../assets/media/"
+const relativePathImage = "assets/img/";
+const relativePathMedia = "assets/media/"
 
 
 function showAvatar() {

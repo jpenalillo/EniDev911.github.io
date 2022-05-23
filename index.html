@@ -58,6 +58,38 @@
 
   <!-- ****************** Hero Section ********************* -->
   <header id="hero-section" class="text-dark">
+    <!-- Group buttons -->
+    <div class="btn-group-vertical btn-group-lg">
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/profile.php?id=100009064421475" target="_blank"
+        class="mt-3 btn btn-lg btn-warning btn-outline-primary border-0 text-dark hover-light">
+        <i class="fab fa-facebook fs-2"></i> faceboook</a>
+      <!-- Twitter -->
+      <a href="https://twitter.com/MarcoContreraas" target="_blank"
+        class="btn btn-lg btn-warning btn-outline-info border-0 text-dark text-start hover-light">
+        <i class="fab fa-twitter fs-2"></i>
+        twitter</a>
+      <!-- Github -->
+      <a href="https://github.com/enidev911" target="_blank"
+        class="btn btn-lg btn-warning btn-outline-dark border-0 ab text-start">
+        <i class="fab fa-github fs-2"></i>
+        github</a>
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/marco-contreras-herrera-9b6952213/" target="_blank"
+        class="btn btn-lg btn-warning btn-outline-primary border-0 ab text-start text-dark hover-light">
+        <i class="fab fa-linkedin fs-2"></i>
+        linkedIn</a>
+      <!-- Play -->
+      <button class="btn btn-warning btn-outline-light border-0 text-start text-dark" onclick="playSound();">
+        <i class="fas fa-play fs-3 text-dark ps-0"></i>
+        &nbsp;Play</button>
+      <!-- Cv -->
+      <a href="assets/docs/CV_Marco_Antonio_Contreras_Herrera__Comprimido.pdf"
+        class="btn btn-lg btn-warning btn-outline-secondary border-0 ab text-dark text-start hover-light"
+        download="CV-EniDev911.pdf">
+        <i class="fas fa-file-download fs-2"></i>
+        &nbsp;CV</a>
+    </div>
     <!-- Carousel wrapper -->
     <div id="carouselVideo" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <!-- Indicators -->
@@ -182,7 +214,7 @@
       <div class="col-12 col-md-6 col-lg-4 py-2">
         <!-- Card-1 Landing-page -->
         <article class="card">
-          <img src="assets/img/card-1.png" alt="css trabajo" class="img-top border border-warning rounded">
+          <img src="assets/img/works/01.png" alt="css trabajo" class="img-top border border-warning rounded">
           <div class="card-body text-center card-dark">
             <!-- accordion -->
             <div class="accordion" id="accordionCard">
@@ -252,7 +284,7 @@
       <!-- Card-2 Iguana-Page -->
       <div class="col-12 col-md-6 col-lg-4 py-2">
         <article class="card">
-          <img src="assets/img/card-2.png" alt="iguana trabajo" class="img-top border border-warning rounded">
+          <img src="assets/img/works/02.png" alt="iguana trabajo" class="img-top border border-warning rounded">
           <div class="card-body text-center card-dark">
             <!-- accordion -->
             <div class="accordion" id="accordionCard2">
@@ -320,16 +352,17 @@
       <!-- Card-3 Cuppon -->
       <div class="col-12 col-md-6 col-lg-4 py-2">
         <article class="card">
-          <img src="assets/img/card-3.png" alt="cuppons trabajo" class="img-card-top border border-warning rounded">
+          <img src="assets/img/works/03.png" alt="cuppons trabajo" class="img-card-top border border-warning rounded">
           <div class="card-body card-dark">
             <!-- accordion -->
             <div class="accordion" id="accordionCard3">
               <!-- tech -->
               <div class="accordion-item mb-2 border-0">
-                <h2 class="accordion-heade" id="headingTech3">
+                <h2 class="accordion-header" id="headingTech3">
                   <button type="button" class="btn btn-dark btn-lg btn-outline-warning w-100 text-uppercase text-start"
                     data-bs-toggle="collapse" data-bs-target="#collapseTech3" aria-expanded="true"
-                    aria-controls="collapseTech3">Tecnologías <i class="fas fa-caret-down fs-3"></i></button>
+                    aria-controls="collapseTech3">Tecnologías <i class="fas fa-caret-down fs-3"></i>
+                  </button>
                 </h2>
                 <div class="accordion-collapse collapse" id="collapseTech3" aria-labelledby="headingTech3"
                   data-bs-parent="#accordionCard3">
@@ -393,43 +426,73 @@
       </div>
     </div>
   </section>
-  <!-- skills -->
-  <section class="skill">
-    <h2 class="text-center fs-1 mt-3">Habilidades</h2>
-    <div class="container">
-      <div class="row w-100">
-        <!-- Html -->
-        <div class="col-12 col-md-3 col-lg-5 mx-auto">
-
-          <div class="card px-3 py-3">
-            <div class="card-body">
-            </div>
-            HTML
-            <div class="progress mb-3" style="height: 30px">
-              <div class="progress-bar progress-bar-striped bg-danger text-light fw-bold progress-bar-animated"
-                role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
-            </div>
-            CSS
-            <div class="progress mb-3" style="height: 30px">
-              <div
-                class="progress-bar progress-bar-striped bg-primary-gradient text-light fw-bold progress-bar-animated"
-                role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
-            </div>
-            JavaScript
-            <div class="progress" style="height: 30px">
-              <div class="progress-bar progress-bar-striped bg-warning text-light fw-bold progress-bar-animated"
-                role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
-            </div>
+  <!-- skills and tools -->
+  <section id="skill" class="container-sm my-5 bg-dark bg-gradient rounded border border-secondary shadow p-0">
+    <h2 class="display-4 fw-bold text-center text-light py-3 mb-3 bg-secondary border border-body">SOFTWARE</h2>
+    <div class="container-sm">
+      <div class="row border border-danger">
+        <!-- Vs-Code -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class=" w-50 flex-shrink-1 flex-grow-1 mb-5 text-center mx-auto">
+            <img src="assets/img/software/visual-studio-code.png" alt="css3" class="img-fluid w-75 logo"
+              data-bs-toggle="tooltip" data-bs-placement="bottom" title="Visual Studio Code" onclick="showMessage()">
           </div>
-
+        </div>
+        <!-- Git -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="w-50 flex-shrink-1 flex-grow-1 mb-5 mx-auto">
+            <img src="assets/img/software/git.png" alt="git" class="img-fluid w-75 logo" data-bs-toggle="tooltip"
+              data-bs-placement="bottom" title="Git">
+          </div>
+        </div>
+        <!-- Windows Terminal -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="w-50 flex-shrink-1 flex-grow-1 mb-5 mx-auto">
+            <img src="assets/img/software/windows-terminal.png" alt="git" class="img-fluid w-75 logo"
+              data-bs-toggle="tooltip" data-bs-placement="bottom" title="Windows Terminal">
+          </div>
+        </div>
+        <!-- WSL Windows Subsystem For Linux -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="w-50 flex-shrink-1 flex-grow-1 mb-5 mx-auto">
+            <img src="assets/img/software/windows-subsystem-for-linux.png" alt="git" class="img-fluid w-75 logo"
+              data-bs-toggle="tooltip" data-bs-placement="bottom" title="Windows Subsystem For Linux">
+          </div>
         </div>
       </div>
-    </div>
 
+    </div>
   </section>
   <!-- music -->
   <div id="sound" class="fixed-bottom text-center"></div>
 
+  <div class="row w-100">
+    <!-- Html -->
+    <div class="col-12 col-md-3 col-lg-5 mx-auto">
+      <div class="card px-3 py-3">
+        <div class="card-body">
+        </div>
+        HTML
+        <div class="progress mb-3" style="height: 30px">
+          <div class="progress-bar progress-bar-striped bg-danger text-light fw-bold progress-bar-animated"
+            role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%
+          </div>
+        </div>
+        CSS
+        <div class="progress mb-3" style="height: 30px">
+          <div class="progress-bar progress-bar-striped bg-primary-gradient text-light fw-bold progress-bar-animated"
+            role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%
+          </div>
+        </div>
+        JavaScript
+        <div class="progress" style="height: 30px">
+          <div class="progress-bar progress-bar-striped bg-warning text-light fw-bold progress-bar-animated"
+            role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Libs and scripts -->
   <!-- Sweet Alert2 -->

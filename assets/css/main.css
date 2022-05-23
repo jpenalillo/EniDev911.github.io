@@ -8,7 +8,7 @@
 @font-face {
     font-family: Victor Mono;
     src: url(../fonts/VictorMono.ttf);
-    font-weight: bold;
+    src: url(../fonts/VictorMono-Bold.ttf);
 }
 
 @font-face {
@@ -22,6 +22,7 @@
     --primary-color: #fa0;
     --font-normal: "Scope One";
     --font-code: "Cascadia Code";
+    --font-code-victor: "Victor Mono";
 }
 
 body {
@@ -101,6 +102,24 @@ body.dark {
     border-bottom: 2px solid var(--primary-color);
 }
 
+.carousel {
+    position: relative;
+}
+
+.btn-group-vertical {
+    position: absolute;
+    left: 4%;
+    z-index: 2;
+    filter: drop-shadow(4px 2px 10px #000);
+    border-radius: 7px;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: auto;
+    font-family: var(--font-code-victor);
+    text-align: left;
+    font-weight: bolder;
+}
+
 
 /* About */
 #about {
@@ -174,6 +193,24 @@ body.dark {
     color: var(--text-color);
 }
 
+/* Skills and software */
+
+#skill .logo {
+    filter: drop-shadow(2px 8px 6px #000);
+    transition: transform .5s;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    cursor: pointer;
+}
+
+#skill .logo:hover {
+    will-change: transform, filter;
+    filter: drop-shadow(4px 2px 10px var(--primary-color));
+    transform: scale(1.4);
+}
+
 
 /* hover and transitions */
 
@@ -200,6 +237,10 @@ body.dark {
     }
 
     .carousel {
+        visibility: hidden;
+    }
+
+    .btn-group-vertical {
         visibility: hidden;
     }
 
